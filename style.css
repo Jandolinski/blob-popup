@@ -1,0 +1,53 @@
+/*Downloaded from https://www.codeseek.co/osublake/svg-blob-vdzjyg */
+.blob__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+#svg {
+    transition: transform 2s ease-in-out;
+    width: 250px;
+    height: 250px;
+}
+#svg.active {
+    z-index: 999;
+}
+#svg.filled {
+    z-index: -1;
+}
+#path1 {
+    fill: #ffdd00;
+}
+
+#path2 {
+    fill: #ffdd00;
+}
+
+.controls {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: fit-content;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffdd00;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.overlay.active {
+    opacity: 1;
+    z-index: 999;
+}
+#btn {
+    /* display: none; */
+}
